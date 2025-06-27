@@ -16,9 +16,12 @@ import com.dennismamyala.automation.My_First_Project.Pages.AppointmentForm_Page;
 import com.dennismamyala.automation.My_First_Project.Pages.Landing_Page;
 import com.dennismamyala.automation.My_First_Project.Pages.Login_Page;
 
+import Utils.WebDriverUtils;
+
 
 public class BaseTest {
-
+    
+	protected WebDriverUtils utils;
 	Login_Page login_page;
 	public WebDriver driver;
 
@@ -84,6 +87,7 @@ public class BaseTest {
 		driver = Initializer();
 		Landing_Page landingPage = new Landing_Page(driver);
 		landingPage.GoTo();
+		Utils();
 	}
 	
 	
@@ -107,6 +111,12 @@ public class BaseTest {
 	public void hasErrorMessageAppeared(String message) {
 		
 		login_page.hasErrorAppeared(message);
+	}
+	
+	public void Utils() {
+		
+		utils = new WebDriverUtils(driver);
+		//return utils;
 	}
 
 }

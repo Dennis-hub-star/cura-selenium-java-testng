@@ -6,10 +6,13 @@ import com.dennismamyala.automation.My_First_Project.Base.BaseTest;
 import com.dennismamyala.automation.My_First_Project.Pages.AppointmentConfirmation_Page;
 import com.dennismamyala.automation.My_First_Project.Pages.AppointmentForm_Page;
 import com.dennismamyala.automation.My_First_Project.Pages.History_Page;
-import com.dennismamyala.automation.My_First_Project.Pages.Login_Page;
 import com.dennismamyala.automation.My_First_Project.Pages.Profile_Page;
 
+import Utils.WebDriverUtils;
+
 public class BookAppointment extends BaseTest {
+	
+	//WebDriverUtils utils; 
 	
 	// Facilities 
 	String tokyoFacility = "Tokyo CURA Healthcare Center";
@@ -43,6 +46,76 @@ public class BookAppointment extends BaseTest {
 		profile.viewProfile();
 		
 	}
+	
+	@Test
+	public void testNavigateToProfileFromAppointmentForm() {
+		
+		
+		Signin("John Doe", "ThisIsNotAPassword");
+		utils.clickOnBurger();
+		utils.clickOnProfile();
+		
+	}
+	
+	@Test
+	public void testNavigateToProfileFromHistory() {
+		Signin("John Doe", "ThisIsNotAPassword");
+		utils.clickOnBurger();
+		utils.clickOnHistory();
+		utils.clickOnBurger();
+		utils.clickOnProfile();
+		
+	}
+	
+	@Test
+	public void testNavigateToHistoryFromAppointmentForm() {
+		Signin("John Doe", "ThisIsNotAPassword");
+		utils.clickOnBurger();
+		utils.clickOnHistory();
+		
+	}
+	
+	@Test
+	public void testNavigateToHistoryFromProfile() {
+		Signin("John Doe", "ThisIsNotAPassword");
+		utils.clickOnBurger();
+		utils.clickOnProfile();
+		utils.clickOnBurger();
+		utils.clickOnHistory();
+		
+	}
+	
+	@Test
+	public void testLogoutFromHomepage() {
+		Signin("John Doe", "ThisIsNotAPassword");
+		utils.clickOnBurger();
+		utils.clickOnLogoutOnBurgerMenu();	
+	}
+	
+	@Test
+	public void testLogoutFromProfileUsingBurgerMenu() {
+		Signin("John Doe", "ThisIsNotAPassword");
+		utils.clickOnBurger();
+		utils.clickOnProfile();
+		utils.clickOnBurger();
+		utils.clickOnLogoutOnBurgerMenu();	
+		
+		
+		
+	}
+	
+	@Test
+	public void testLogoutFromProfileUsingLogoutBtn() {
+		Signin("John Doe", "ThisIsNotAPassword");
+		utils.clickOnBurger();
+		utils.clickOnProfile();
+		utils.clickOnLogoutOnProfile();	
+		
+		
+		
+	}
+	
+	
 	
 	
 //	@Test(dependsOnMethods = "bookAppointmentTest")

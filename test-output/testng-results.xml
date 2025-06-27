@@ -1,51 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-27T12:09:12 SAST" name="Suite" finished-at="2025-06-27T12:11:27 SAST" duration-ms="135508">
+  <suite started-at="2025-06-27T21:30:59 SAST" name="Default suite" finished-at="2025-06-27T21:36:59 SAST" duration-ms="359886">
     <groups>
     </groups>
-    <test started-at="2025-06-27T12:09:12 SAST" name="Test" finished-at="2025-06-27T12:11:27 SAST" duration-ms="135508">
+    <test started-at="2025-06-27T21:30:59 SAST" name="Default test" finished-at="2025-06-27T21:36:59 SAST" duration-ms="359886">
       <class name="com.dennismamyala.automation.My_First_Project.BookAppointment">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3590fc5b]" started-at="2025-06-27T12:09:12 SAST" name="LaunchApplication" finished-at="2025-06-27T12:09:58 SAST" duration-ms="45885" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:30:59 SAST" name="LaunchApplication" finished-at="2025-06-27T21:31:44 SAST" duration-ms="44225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="bookAppointmentTest()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3590fc5b]" started-at="2025-06-27T12:09:58 SAST" name="bookAppointmentTest" finished-at="2025-06-27T12:10:30 SAST" duration-ms="31479" status="PASS">
+        <test-method signature="bookAppointmentTest()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:31:44 SAST" name="bookAppointmentTest" finished-at="2025-06-27T21:32:24 SAST" duration-ms="40158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookAppointmentTest -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3590fc5b]" started-at="2025-06-27T12:10:30 SAST" name="Close" finished-at="2025-06-27T12:10:32 SAST" duration-ms="2304" status="PASS">
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:32:24 SAST" name="Close" finished-at="2025-06-27T21:32:29 SAST" duration-ms="4810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:32:29 SAST" name="LaunchApplication" finished-at="2025-06-27T21:32:49 SAST" duration-ms="20050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testLogoutFromHomepage()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:32:49 SAST" name="testLogoutFromHomepage" finished-at="2025-06-27T21:32:56 SAST" duration-ms="7470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutFromHomepage -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:32:56 SAST" name="Close" finished-at="2025-06-27T21:32:57 SAST" duration-ms="1165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:32:57 SAST" name="LaunchApplication" finished-at="2025-06-27T21:33:18 SAST" duration-ms="20639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testLogoutFromProfileUsingBurgerMenu()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:33:18 SAST" name="testLogoutFromProfileUsingBurgerMenu" finished-at="2025-06-27T21:33:27 SAST" duration-ms="9348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutFromProfileUsingBurgerMenu -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:33:27 SAST" name="Close" finished-at="2025-06-27T21:33:29 SAST" duration-ms="1863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:33:29 SAST" name="LaunchApplication" finished-at="2025-06-27T21:33:55 SAST" duration-ms="25927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testLogoutFromProfileUsingLogoutBtn()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:33:55 SAST" name="testLogoutFromProfileUsingLogoutBtn" finished-at="2025-06-27T21:34:07 SAST" duration-ms="11635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutFromProfileUsingLogoutBtn -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:34:07 SAST" name="Close" finished-at="2025-06-27T21:34:09 SAST" duration-ms="1933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:34:09 SAST" name="LaunchApplication" finished-at="2025-06-27T21:34:32 SAST" duration-ms="23061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testNavigateToHistoryFromAppointmentForm()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:34:32 SAST" name="testNavigateToHistoryFromAppointmentForm" finished-at="2025-06-27T21:34:51 SAST" duration-ms="18883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToHistoryFromAppointmentForm -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:34:51 SAST" name="Close" finished-at="2025-06-27T21:35:00 SAST" duration-ms="9163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:35:00 SAST" name="LaunchApplication" finished-at="2025-06-27T21:35:27 SAST" duration-ms="26931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testNavigateToHistoryFromProfile()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:35:27 SAST" name="testNavigateToHistoryFromProfile" finished-at="2025-06-27T21:35:58 SAST" duration-ms="31391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToHistoryFromProfile -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:35:58 SAST" name="Close" finished-at="2025-06-27T21:36:02 SAST" duration-ms="4035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:36:02 SAST" name="LaunchApplication" finished-at="2025-06-27T21:36:21 SAST" duration-ms="18768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testNavigateToProfileFromAppointmentForm()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:36:21 SAST" name="testNavigateToProfileFromAppointmentForm" finished-at="2025-06-27T21:36:27 SAST" duration-ms="6074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToProfileFromAppointmentForm -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:36:27 SAST" name="Close" finished-at="2025-06-27T21:36:28 SAST" duration-ms="1059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:36:28 SAST" name="LaunchApplication" finished-at="2025-06-27T21:36:46 SAST" duration-ms="18311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testNavigateToProfileFromHistory()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:36:46 SAST" name="testNavigateToProfileFromHistory" finished-at="2025-06-27T21:36:56 SAST" duration-ms="9317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToProfileFromHistory -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@5fe94a96]" started-at="2025-06-27T21:36:56 SAST" name="Close" finished-at="2025-06-27T21:36:59 SAST" duration-ms="2954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
       </class> <!-- com.dennismamyala.automation.My_First_Project.BookAppointment -->
-      <class name="com.dennismamyala.automation.My_First_Project.ErrorValidationTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:10:32 SAST" name="LaunchApplication" finished-at="2025-06-27T12:10:55 SAST" duration-ms="22887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="bookingErrorValidation()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:10:55 SAST" name="bookingErrorValidation" finished-at="2025-06-27T12:11:03 SAST" duration-ms="7938" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookingErrorValidation -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:11:03 SAST" name="Close" finished-at="2025-06-27T12:11:04 SAST" duration-ms="1636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:11:04 SAST" name="LaunchApplication" finished-at="2025-06-27T12:11:22 SAST" duration-ms="17325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:11:22 SAST" name="loginErrorValidation" finished-at="2025-06-27T12:11:26 SAST" duration-ms="4381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:11:26 SAST" name="Close" finished-at="2025-06-27T12:11:27 SAST" duration-ms="888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-      </class> <!-- com.dennismamyala.automation.My_First_Project.ErrorValidationTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

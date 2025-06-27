@@ -28,6 +28,12 @@ public class WebDriverUtils {
 	
 	@FindBy(xpath = "//a[text()='Profile']")
 	WebElement profileBtn;
+	
+	@FindBy(xpath = "//a[text() = 'Logout']")
+	WebElement burgerLogoutBtn;
+	
+	@FindBy(xpath = "//p[@class = 'lead'][2]/a")
+	WebElement profileLogoutBtn;
 
 	public void assertEquals(Object value1, Object value2) {
 
@@ -61,6 +67,20 @@ public class WebDriverUtils {
 	public void clickOnProfile() {
 		
 		profileBtn.click();
+	}
+
+	public void clickOnLogoutOnBurgerMenu() {
+		// TODO Auto-generated method stub
+		
+		burgerLogoutBtn.click();
+		
+	}
+	
+	public void clickOnLogoutOnProfile() {
+		// TODO Auto-generated method stub
+		
+		profileLogoutBtn.click();
+		
 	}
 
 }
