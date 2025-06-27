@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-27T12:09:12 SAST" name="Suite" finished-at="2025-06-27T12:11:27 SAST" duration-ms="135508">
+    <groups>
+    </groups>
+    <test started-at="2025-06-27T12:09:12 SAST" name="Test" finished-at="2025-06-27T12:11:27 SAST" duration-ms="135508">
+      <class name="com.dennismamyala.automation.My_First_Project.BookAppointment">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3590fc5b]" started-at="2025-06-27T12:09:12 SAST" name="LaunchApplication" finished-at="2025-06-27T12:09:58 SAST" duration-ms="45885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="bookAppointmentTest()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3590fc5b]" started-at="2025-06-27T12:09:58 SAST" name="bookAppointmentTest" finished-at="2025-06-27T12:10:30 SAST" duration-ms="31479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAppointmentTest -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3590fc5b]" started-at="2025-06-27T12:10:30 SAST" name="Close" finished-at="2025-06-27T12:10:32 SAST" duration-ms="2304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- com.dennismamyala.automation.My_First_Project.BookAppointment -->
+      <class name="com.dennismamyala.automation.My_First_Project.ErrorValidationTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:10:32 SAST" name="LaunchApplication" finished-at="2025-06-27T12:10:55 SAST" duration-ms="22887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="bookingErrorValidation()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:10:55 SAST" name="bookingErrorValidation" finished-at="2025-06-27T12:11:03 SAST" duration-ms="7938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingErrorValidation -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:11:03 SAST" name="Close" finished-at="2025-06-27T12:11:04 SAST" duration-ms="1636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:11:04 SAST" name="LaunchApplication" finished-at="2025-06-27T12:11:22 SAST" duration-ms="17325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:11:22 SAST" name="loginErrorValidation" finished-at="2025-06-27T12:11:26 SAST" duration-ms="4381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@5b12b668]" started-at="2025-06-27T12:11:26 SAST" name="Close" finished-at="2025-06-27T12:11:27 SAST" duration-ms="888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- com.dennismamyala.automation.My_First_Project.ErrorValidationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
