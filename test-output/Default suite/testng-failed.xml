@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dennismamyala.automation.My_First_Project.BookAppointment">
+      <class name="com.dennismamyala.automation.My_First_Project.ErrorValidationTest">
         <methods>
-          <include name="testNavigateToProfileFromAppointmentForm"/>
           <include name="Close"/>
           <include name="LaunchApplication"/>
+          <include name="loginErrorValidation" invocation-numbers="3"/>
         </methods>
-      </class> <!-- com.dennismamyala.automation.My_First_Project.BookAppointment -->
+      </class> <!-- com.dennismamyala.automation.My_First_Project.ErrorValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

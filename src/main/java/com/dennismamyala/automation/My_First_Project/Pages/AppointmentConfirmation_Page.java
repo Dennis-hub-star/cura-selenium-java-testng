@@ -19,7 +19,7 @@ public class AppointmentConfirmation_Page extends WebDriverUtils {
 	}
 
 	@FindBy(id = "facility")
-	WebElement facility;
+	WebElement actualFacility;
 
 	@FindBy(id = "hospital_readmission")
 	WebElement hospitalReadmission;
@@ -35,15 +35,17 @@ public class AppointmentConfirmation_Page extends WebDriverUtils {
 
 	
 
-	public History_Page validateConfirmation(String expectedFacility, String expectedHealthProgram, String expectedDate, String expectedComment) {
-
-		// was the last parameter: boolean isReadmissionApplied
-
-		//String isreadmissionApplied = isReadmissionApplied ? "Yes" : "No";
-		//assertEquals(hospitalReadmission.getText(), isreadmissionApplied);
+	public History_Page validateConfirmation(String expectedFacility, String expectedHealthProgram, String expectedDate, String expectedComment, String applyForHospitalReadmission) {
+        
+		
+		String isHospitalReadmissionApplied = applyForHospitalReadmission.equalsIgnoreCase("Yes") ? "Yes" : "No";
+		
+		
+		assertEquals(actualFacility.getText(), expectedFacility);
 		assertEquals(actualHealthProgram.getText().trim(), expectedHealthProgram);
 		assertEquals(ActualComment.getText(), expectedComment);
 		assertEquals(visitDate.getText(), expectedDate);
+		assertEquals(hospitalReadmission.getText(), isHospitalReadmissionApplied);
 
 		goToHome();
 		

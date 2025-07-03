@@ -25,6 +25,9 @@ public class History_Page extends WebDriverUtils{
 	@FindBy(className = "panel-heading")
 	WebElement actualDate;
 	
+	@FindBy(id = "hospital_readmission")
+	WebElement hospitalReadmission;
+	
 	@FindBy(id = "facility")
 	WebElement actualFacility;
 	
@@ -38,7 +41,7 @@ public class History_Page extends WebDriverUtils{
 	
 	
 	
-	public Profile_Page viewHistory(String expectedFacility, String expectedHealthProgram, String expectedDate, String expectedComment) {
+	public Profile_Page viewHistory(String expectedFacility, String expectedHealthProgram, String expectedDate, String expectedComment, String applyForHospitalReadmission) {
 		
 		clickOnBurger();
 		clickOnHistory();
@@ -47,6 +50,7 @@ public class History_Page extends WebDriverUtils{
 		assertEquals(actualHealthProgram.getText(), expectedHealthProgram);
 		assertEquals(actualDate.getText(), expectedDate);
 		assertEquals(actualComment.getText(), expectedComment);
+		assertEquals(hospitalReadmission.getText(), applyForHospitalReadmission);
 		
 		goToHome();
 		

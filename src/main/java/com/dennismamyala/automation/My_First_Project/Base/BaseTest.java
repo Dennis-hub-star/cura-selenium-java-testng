@@ -1,9 +1,16 @@
 package com.dennismamyala.automation.My_First_Project.Base;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,6 +22,8 @@ import org.testng.annotations.BeforeMethod;
 import com.dennismamyala.automation.My_First_Project.Pages.AppointmentForm_Page;
 import com.dennismamyala.automation.My_First_Project.Pages.Landing_Page;
 import com.dennismamyala.automation.My_First_Project.Pages.Login_Page;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import Utils.WebDriverUtils;
 
@@ -117,6 +126,49 @@ public class BaseTest {
 		
 		utils = new WebDriverUtils(driver);
 		//return utils;
+	}
+	
+	
+	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
+
+		// readFileToString --> Json file content past would get converted string
+		// We past this because there a deprecation error on readFileToString method. So
+		// it was basically crossed
+		String jsonContent = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
+
+		// Converting the string to hashmap and we need to get a dependency called
+		// ********************** jackson data bind FROM maven repository ******************
+
+		ObjectMapper mapper = new ObjectMapper();
+
+		// From ObjectMapper class there is a readValue method which we use to read a
+		// string and then covert it to a hashmap
+		// This readValue method expects two arguments, the first argument is the string
+		// to be converted, the second argument is responsible for how the string should
+		// be converted
+		// So the second argument basically says create two hashmaps and then put them
+		// inside a list
+		List<HashMap<String, String>> data = mapper.readValue(jsonContent,
+				new TypeReference<List<HashMap<String, String>>>() {
+				});
+
+		return data;
+	}
+	
+	
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException{
+	    TakesScreenshot ts = (TakesScreenshot) driver;
+	    File source = ts.getScreenshotAs(OutputType.FILE);
+
+	    String destPath = System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+	    File file = new File(destPath);
+
+	    // Create reports folder if it doesn't exist
+	    file.getParentFile().mkdirs();
+
+	    FileUtils.copyFile(source, file);
+
+	    return destPath;
 	}
 
 }

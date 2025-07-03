@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import Utils.WebDriverUtils;
 
-public class AppointmentForm_Page extends WebDriverUtils{
+public class AppointmentForm_Page extends WebDriverUtils {
 
 	WebDriver driver;
 
@@ -49,10 +49,10 @@ public class AppointmentForm_Page extends WebDriverUtils{
 	@FindBy(id = "btn-book-appointment")
 	WebElement bookAppointmentBtn;
 
-	public AppointmentConfirmation_Page book(String facility, String healthProgram, String date, String comment)
-			throws InterruptedException {
-		String actualFaciltiy = facility == "" ? "Tokyo" : facility;
-		String actualHealthProgram = healthProgram == "" ? "Medicare" : healthProgram;
+	public AppointmentConfirmation_Page book(String facility, String healthProgram, String date, String comment,
+			String applyForHospitalReadmission) throws InterruptedException {
+		String actualFaciltiy = facility.equals("") ? "Tokyo" : facility;
+		String actualHealthProgram = healthProgram.equals("") ? "Medicare" : healthProgram;
 		List<WebElement> options = driver.findElements(By.tagName("option"));
 
 		options.stream().forEach(option -> {
@@ -60,7 +60,9 @@ public class AppointmentForm_Page extends WebDriverUtils{
 				option.click();
 		});
 
-		checkBox.click();
+		if (applyForHospitalReadmission.equalsIgnoreCase("Yes")) {
+			checkBox.click();
+		}
 
 		WebElement radioBtn = driver.findElement(By.xpath("//label[@class = 'radio-inline']/input[@id = 'radio_program_"
 				+ actualHealthProgram.toLowerCase() + "']"));
@@ -106,7 +108,7 @@ public class AppointmentForm_Page extends WebDriverUtils{
 
 		commentBox.sendKeys(comment);
 
-		boolean isReadmissionApplied = checkBox.isSelected();
+		// boolean isReadmissionApplied = checkBox.isSelected();
 		bookAppointmentBtn.click();
 
 		// Got the users inputs directly from the page
@@ -127,10 +129,9 @@ public class AppointmentForm_Page extends WebDriverUtils{
 		return appointmentConfirmation;
 
 	}
-	
-	
+
 	public void hasCurrentUrlChanged(String URL) {
-		
+
 		String originalUrl = driver.getCurrentUrl();
 		assertEquals(originalUrl, URL);
 

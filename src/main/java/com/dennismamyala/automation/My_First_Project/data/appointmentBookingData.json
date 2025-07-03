@@ -1,0 +1,37 @@
+[
+	
+	
+	  {
+		"username":"John Doe", 
+		"password":"ThisIsNotAPassword",
+	    "facility": "Tokyo CURA Healthcare Center",
+	    "healthcareProgram": "Medicare",
+	    "visitDate": "22/06/2025",
+	    "comment": "Routine appointment",
+	    "applyForHospitalReadmission": "Yes"
+	  },
+	  
+	  {
+		  "username":"John Doe", 
+		  "password":"ThisIsNotAPassword",
+	      "facility": "Hongkong CURA Healthcare Center",
+	      "healthcareProgram": "Medicaid",
+	      "visitDate": "22/06/2025",
+	      "comment": "Routine appointment",
+	      "applyForHospitalReadmission": "No"
+	    },
+		
+		{
+			"username":"John Doe", 
+			"password":"ThisIsNotAPassword",
+		    "facility": "Seoul CURA Healthcare Center",
+		    "healthcareProgram": "None",
+		    "visitDate": "22/06/2025",
+		    "comment": "Routine appointment",
+		    "applyForHospitalReadmission": "Yes"
+		  }
+
+		  
+		  
+	
+]

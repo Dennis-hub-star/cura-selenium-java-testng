@@ -1,0 +1,30 @@
+[
+	
+	{
+		"username":"John Doe", 
+		"password":"ThisIsNotAPassword",
+	    "facility": "Tokyo CURA Healthcare Center",
+	    "healthcareProgram": "Medicare",
+	    "visitDate": "",
+	    "comment": "",
+	    "applyForHospitalReadmission": "No",
+		"URL": "https://katalon-demo-cura.herokuapp.com/#appointment"
+	  },
+
+	
+	{
+		"username":"John Doe", 
+		"password":"ThisIsNotAPassword",
+	    "facility": "Tokyo CURA Healthcare Center",
+	    "healthcareProgram": "None",
+	    "visitDate": "",
+	    "comment": "Routine appointment",
+	    "applyForHospitalReadmission": "Yes",
+		"URL": "https://katalon-demo-cura.herokuapp.com/#appointment"
+	  }
+	
+	
+	
+	
+	
+]

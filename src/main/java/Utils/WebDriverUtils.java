@@ -1,5 +1,11 @@
 package Utils;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +15,7 @@ import org.testng.Assert;
 
 public class WebDriverUtils {
 
-	WebDriver driver;
+	public WebDriver driver;
 
 	public WebDriverUtils(WebDriver driver) {
 
@@ -81,6 +87,22 @@ public class WebDriverUtils {
 		
 		profileLogoutBtn.click();
 		
+	}
+	
+	
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException{
+	    TakesScreenshot ts = (TakesScreenshot) driver;
+	    File source = ts.getScreenshotAs(OutputType.FILE);
+
+	    String destPath = System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+	    File file = new File(destPath);
+
+	    // Create reports folder if it doesn't exist
+	    file.getParentFile().mkdirs();
+
+	    FileUtils.copyFile(source, file);
+
+	    return destPath;
 	}
 
 }
