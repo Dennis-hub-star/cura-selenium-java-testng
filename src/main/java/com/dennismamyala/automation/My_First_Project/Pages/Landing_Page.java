@@ -24,9 +24,7 @@ public class Landing_Page {
 		
 		makeAppointmentBtn.click();
 		
-//		Login_Page login = new Login_Page(driver);
-//		
-//		return login;
+
 		
 		
 	}

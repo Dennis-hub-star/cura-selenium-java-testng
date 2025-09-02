@@ -6,15 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.Reporter;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.dennismamyala.automation.My_First_Project.Base.BaseTest;
 import com.dennismamyala.automation.My_First_Project.ExtentReportsNG.ExtentReportsNG;
-
-import Utils.WebDriverUtils;
 
 public class Listeners extends BaseTest implements ITestListener{
 	

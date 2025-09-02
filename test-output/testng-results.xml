@@ -1,17 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="6" passed="3" failed="1" skipped="0">
+<testng-results retried="2" ignored="0" total="18" passed="15" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-03T16:09:04 SAST" name="Suite" finished-at="2025-07-03T16:15:16 SAST" duration-ms="372054">
+  <suite started-at="2025-09-02T11:46:56 SAST" name="Suite" finished-at="2025-09-02T11:57:39 SAST" duration-ms="642888">
     <groups>
     </groups>
-    <test started-at="2025-07-03T16:09:04 SAST" name="Test" finished-at="2025-07-03T16:15:16 SAST" duration-ms="372054">
-      <class name="com.dennismamyala.automation.My_First_Project.ErrorValidationTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:09:12 SAST" name="LaunchApplication" finished-at="2025-07-03T16:10:13 SAST" duration-ms="60651" status="PASS">
+    <test started-at="2025-09-02T11:46:56 SAST" name="Test" finished-at="2025-09-02T11:57:39 SAST" duration-ms="642888">
+      <class name="com.dennismamyala.automation.My_First_Project.BookAppointment">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:46:59 SAST" name="LaunchApplication" finished-at="2025-09-02T11:47:27 SAST" duration-ms="27654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:10:13 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-07-03T16:10:19 SAST" duration-ms="6525" status="PASS">
+        <test-method signature="bookAppointmentTest(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:47:27 SAST" name="bookAppointmentTest" data-provider="getValidBookingData" finished-at="2025-09-02T11:48:00 SAST" duration-ms="33790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, visitDate=22/06/2025, comment=Routine appointment, applyForHospitalReadmission=Yes, facility=Tokyo CURA Healthcare Center, healthcareProgram=Medicare, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAppointmentTest -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:48:01 SAST" name="Close" finished-at="2025-09-02T11:48:05 SAST" duration-ms="3929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:48:05 SAST" name="LaunchApplication" finished-at="2025-09-02T11:48:30 SAST" duration-ms="25704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="bookAppointmentTest(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:48:30 SAST" name="bookAppointmentTest" data-provider="getValidBookingData" finished-at="2025-09-02T11:49:00 SAST" duration-ms="30230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, visitDate=22/06/2025, comment=Routine appointment, applyForHospitalReadmission=No, facility=Hongkong CURA Healthcare Center, healthcareProgram=Medicaid, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAppointmentTest -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:49:01 SAST" name="Close" finished-at="2025-09-02T11:49:02 SAST" duration-ms="1749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:49:02 SAST" name="LaunchApplication" finished-at="2025-09-02T11:49:27 SAST" duration-ms="24351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="bookAppointmentTest(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:49:27 SAST" name="bookAppointmentTest" data-provider="getValidBookingData" finished-at="2025-09-02T11:50:00 SAST" duration-ms="33369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, visitDate=22/06/2025, comment=Routine appointment, applyForHospitalReadmission=Yes, facility=Seoul CURA Healthcare Center, healthcareProgram=None, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAppointmentTest -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:50:00 SAST" name="Close" finished-at="2025-09-02T11:50:02 SAST" duration-ms="2444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:50:02 SAST" name="LaunchApplication" finished-at="2025-09-02T11:50:25 SAST" duration-ms="22051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testLogoutFromHomepage(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:50:25 SAST" name="testLogoutFromHomepage" data-provider="getValidLoginData" finished-at="2025-09-02T11:50:31 SAST" duration-ms="6527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutFromHomepage -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:50:31 SAST" name="Close" finished-at="2025-09-02T11:50:32 SAST" duration-ms="991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:50:32 SAST" name="LaunchApplication" finished-at="2025-09-02T11:50:52 SAST" duration-ms="20188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testLogoutFromProfileUsingBurgerMenu(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:50:52 SAST" name="testLogoutFromProfileUsingBurgerMenu" data-provider="getValidLoginData" finished-at="2025-09-02T11:51:02 SAST" duration-ms="9371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutFromProfileUsingBurgerMenu -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:51:02 SAST" name="Close" finished-at="2025-09-02T11:51:03 SAST" duration-ms="921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:51:03 SAST" name="LaunchApplication" finished-at="2025-09-02T11:51:22 SAST" duration-ms="19034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testLogoutFromProfileUsingLogoutBtn(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:51:22 SAST" name="testLogoutFromProfileUsingLogoutBtn" data-provider="getValidLoginData" finished-at="2025-09-02T11:51:31 SAST" duration-ms="9009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutFromProfileUsingLogoutBtn -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:51:31 SAST" name="Close" finished-at="2025-09-02T11:51:34 SAST" duration-ms="2891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:51:34 SAST" name="LaunchApplication" finished-at="2025-09-02T11:51:56 SAST" duration-ms="22659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testNavigateToHistoryFromAppointmentForm(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:51:56 SAST" name="testNavigateToHistoryFromAppointmentForm" data-provider="getValidLoginData" finished-at="2025-09-02T11:52:10 SAST" duration-ms="13617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToHistoryFromAppointmentForm -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:52:10 SAST" name="Close" finished-at="2025-09-02T11:52:11 SAST" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:52:11 SAST" name="LaunchApplication" finished-at="2025-09-02T11:52:33 SAST" duration-ms="22094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testNavigateToHistoryFromProfile(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:52:33 SAST" name="testNavigateToHistoryFromProfile" data-provider="getValidLoginData" finished-at="2025-09-02T11:52:44 SAST" duration-ms="10555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToHistoryFromProfile -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:52:44 SAST" name="Close" finished-at="2025-09-02T11:52:45 SAST" duration-ms="1499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:52:45 SAST" name="LaunchApplication" finished-at="2025-09-02T11:53:05 SAST" duration-ms="20012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testNavigateToProfileFromAppointmentForm(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:53:05 SAST" name="testNavigateToProfileFromAppointmentForm" data-provider="getValidLoginData" finished-at="2025-09-02T11:53:12 SAST" duration-ms="6623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToProfileFromAppointmentForm -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:53:12 SAST" name="Close" finished-at="2025-09-02T11:53:13 SAST" duration-ms="1133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:53:13 SAST" name="LaunchApplication" finished-at="2025-09-02T11:53:34 SAST" duration-ms="21299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="testNavigateToProfileFromHistory(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:53:34 SAST" name="testNavigateToProfileFromHistory" data-provider="getValidLoginData" finished-at="2025-09-02T11:53:43 SAST" duration-ms="8537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToProfileFromHistory -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5]" started-at="2025-09-02T11:53:43 SAST" name="Close" finished-at="2025-09-02T11:53:45 SAST" duration-ms="1930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- com.dennismamyala.automation.My_First_Project.BookAppointment -->
+      <class name="com.dennismamyala.automation.My_First_Project.ErrorValidationTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:53:45 SAST" name="LaunchApplication" finished-at="2025-09-02T11:54:05 SAST" duration-ms="20327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="bookingErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:54:05 SAST" name="bookingErrorValidation" data-provider="getInvalidBookingData" finished-at="2025-09-02T11:54:12 SAST" duration-ms="6676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, visitDate=, comment=, applyForHospitalReadmission=No, facility=Tokyo CURA Healthcare Center, healthcareProgram=Medicare, URL=https://katalon-demo-cura.herokuapp.com/#appointment, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingErrorValidation -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:54:12 SAST" name="Close" finished-at="2025-09-02T11:54:13 SAST" duration-ms="1009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:54:13 SAST" name="LaunchApplication" finished-at="2025-09-02T11:54:35 SAST" duration-ms="22493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="bookingErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:54:35 SAST" name="bookingErrorValidation" data-provider="getInvalidBookingData" finished-at="2025-09-02T11:54:44 SAST" duration-ms="8235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=ThisIsNotAPassword, visitDate=, comment=Routine appointment, applyForHospitalReadmission=Yes, facility=Tokyo CURA Healthcare Center, healthcareProgram=None, URL=https://katalon-demo-cura.herokuapp.com/#appointment, username=John Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingErrorValidation -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:54:44 SAST" name="Close" finished-at="2025-09-02T11:54:45 SAST" duration-ms="1861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:54:46 SAST" name="LaunchApplication" finished-at="2025-09-02T11:55:14 SAST" duration-ms="28359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:55:14 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-09-02T11:55:19 SAST" duration-ms="5162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +252,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:10:20 SAST" name="Close" finished-at="2025-07-03T16:10:24 SAST" duration-ms="4774" status="PASS">
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:55:19 SAST" name="Close" finished-at="2025-09-02T11:55:22 SAST" duration-ms="2990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:10:24 SAST" name="LaunchApplication" finished-at="2025-07-03T16:10:52 SAST" duration-ms="27800" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:55:22 SAST" name="LaunchApplication" finished-at="2025-09-02T11:55:45 SAST" duration-ms="22690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:10:52 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-07-03T16:10:58 SAST" duration-ms="5883" status="PASS">
+        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:55:45 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-09-02T11:55:49 SAST" duration-ms="4607" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +271,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:10:58 SAST" name="Close" finished-at="2025-07-03T16:11:00 SAST" duration-ms="2160" status="PASS">
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:55:49 SAST" name="Close" finished-at="2025-09-02T11:55:52 SAST" duration-ms="2579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:11:00 SAST" name="LaunchApplication" finished-at="2025-07-03T16:11:31 SAST" duration-ms="30550" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:55:52 SAST" name="LaunchApplication" finished-at="2025-09-02T11:56:15 SAST" duration-ms="22873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:11:31 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-07-03T16:11:37 SAST" duration-ms="5900" status="PASS">
+        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:56:15 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-09-02T11:56:20 SAST" duration-ms="5035" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,15 +290,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:11:37 SAST" name="Close" finished-at="2025-07-03T16:11:38 SAST" duration-ms="944" status="PASS">
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:56:20 SAST" name="Close" finished-at="2025-09-02T11:56:21 SAST" duration-ms="1351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:11:38 SAST" name="LaunchApplication" finished-at="2025-07-03T16:13:30 SAST" duration-ms="112570" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:56:21 SAST" name="LaunchApplication" finished-at="2025-09-02T11:56:40 SAST" duration-ms="19171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method retried="true" signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:13:30 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-07-03T16:13:37 SAST" duration-ms="6242" status="SKIP">
+        <test-method retried="true" signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:56:40 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-09-02T11:56:45 SAST" duration-ms="4143" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -123,15 +353,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:13:37 SAST" name="Close" finished-at="2025-07-03T16:13:38 SAST" duration-ms="1592" status="PASS">
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:56:45 SAST" name="Close" finished-at="2025-09-02T11:56:46 SAST" duration-ms="1402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:13:38 SAST" name="LaunchApplication" finished-at="2025-07-03T16:14:21 SAST" duration-ms="42649" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:56:46 SAST" name="LaunchApplication" finished-at="2025-09-02T11:57:09 SAST" duration-ms="22575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method retried="true" signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:14:21 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-07-03T16:14:28 SAST" duration-ms="6915" status="SKIP">
+        <test-method retried="true" signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:57:09 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-09-02T11:57:14 SAST" duration-ms="4961" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -186,15 +416,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:14:28 SAST" name="Close" finished-at="2025-07-03T16:14:30 SAST" duration-ms="2198" status="PASS">
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:57:14 SAST" name="Close" finished-at="2025-09-02T11:57:15 SAST" duration-ms="1407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:14:30 SAST" name="LaunchApplication" finished-at="2025-07-03T16:14:57 SAST" duration-ms="27279" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:57:15 SAST" name="LaunchApplication" finished-at="2025-09-02T11:57:34 SAST" duration-ms="18674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:14:57 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-07-03T16:15:04 SAST" duration-ms="7086" status="FAIL">
+        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:57:34 SAST" name="loginErrorValidation" data-provider="getInvalidLoginData" finished-at="2025-09-02T11:57:38 SAST" duration-ms="3996" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -249,7 +479,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139]" started-at="2025-07-03T16:15:13 SAST" name="Close" finished-at="2025-07-03T16:15:16 SAST" duration-ms="2999" status="PASS">
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828]" started-at="2025-09-02T11:57:38 SAST" name="Close" finished-at="2025-09-02T11:57:39 SAST" duration-ms="1160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->

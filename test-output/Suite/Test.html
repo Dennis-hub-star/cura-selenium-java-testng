@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 03 16:09:04 SAST 2025</td>
+<td>Started on:</td><td>Tue Sep 02 11:46:56 SAST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>372 seconds (372054 ms)</td>
+<tr><td>Total time:</td><td>642 seconds (642888 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -83,8 +83,8 @@ function toggleAllBoxes() {
 	at com.dennismamyala.automation.My_First_Project.Base.BaseTest.hasErrorMessageAppeared(BaseTest.java:122)
 	at com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace669365112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace669365112'><pre>java.lang.AssertionError: expected [ogin failed! Please ensure the username and password are valid.] but found [Login failed! Please ensure the username and password are valid.]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace685605293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace685605293'><pre>java.lang.AssertionError: expected [ogin failed! Please ensure the username and password are valid.] but found [Login failed! Please ensure the username and password are valid.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -121,8 +121,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>7</td>
-<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139</td></tr>
+<td>3</td>
+<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -133,20 +133,80 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation()'><b>loginErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {errorMessage=Login failed! Please ensure the username and password are valid., password=ThisIsNotAPassword, username=}</td>
+<td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation()'><b>loginErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {errorMessage=Login failed! Please ensure the username and password are valid., password=, username=John Doe}</td>
 <td></td>
-<td>6</td>
-<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139</td></tr>
+<td>4</td>
+<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.testLogoutFromProfileUsingLogoutBtn()'><b>testLogoutFromProfileUsingLogoutBtn</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, username=John Doe}</td>
+<td></td>
+<td>9</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.bookAppointmentTest()'><b>bookAppointmentTest</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, visitDate=22/06/2025, comment=Routine appointment, applyForHospitalReadmission=Yes, facility=Tokyo CURA Healthcare Center, healthcareProgram=Medicare, username=John Doe}</td>
+<td></td>
+<td>33</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
 <tr>
 <td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation()'><b>loginErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {errorMessage=Login failed! Please ensure the username and password are valid., password=ThisIsNotAPassword, username=##123@}</td>
 <td></td>
 <td>5</td>
-<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139</td></tr>
+<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828</td></tr>
 <tr>
-<td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation()'><b>loginErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {errorMessage=Login failed! Please ensure the username and password are valid., password=, username=John Doe}</td>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.testNavigateToProfileFromHistory()'><b>testNavigateToProfileFromHistory</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, username=John Doe}</td>
+<td></td>
+<td>8</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.bookAppointmentTest()'><b>bookAppointmentTest</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, visitDate=22/06/2025, comment=Routine appointment, applyForHospitalReadmission=Yes, facility=Seoul CURA Healthcare Center, healthcareProgram=None, username=John Doe}</td>
+<td></td>
+<td>33</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.testLogoutFromProfileUsingBurgerMenu()'><b>testLogoutFromProfileUsingBurgerMenu</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, username=John Doe}</td>
+<td></td>
+<td>9</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation()'><b>loginErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {errorMessage=Login failed! Please ensure the username and password are valid., password=ThisIsNotAPassword, username=}</td>
 <td></td>
 <td>5</td>
-<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139</td></tr>
+<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.bookAppointmentTest()'><b>bookAppointmentTest</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, visitDate=22/06/2025, comment=Routine appointment, applyForHospitalReadmission=No, facility=Hongkong CURA Healthcare Center, healthcareProgram=Medicaid, username=John Doe}</td>
+<td></td>
+<td>30</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.bookingErrorValidation()'><b>bookingErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {password=ThisIsNotAPassword, visitDate=, comment=, applyForHospitalReadmission=No, facility=Tokyo CURA Healthcare Center, healthcareProgram=Medicare, URL=https://katalon-demo-cura.herokuapp.com/#appointment, username=John Doe}</td>
+<td></td>
+<td>6</td>
+<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.testLogoutFromHomepage()'><b>testLogoutFromHomepage</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, username=John Doe}</td>
+<td></td>
+<td>6</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.testNavigateToHistoryFromAppointmentForm()'><b>testNavigateToHistoryFromAppointmentForm</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, username=John Doe}</td>
+<td></td>
+<td>13</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.bookingErrorValidation()'><b>bookingErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {password=ThisIsNotAPassword, visitDate=, comment=Routine appointment, applyForHospitalReadmission=Yes, facility=Tokyo CURA Healthcare Center, healthcareProgram=None, URL=https://katalon-demo-cura.herokuapp.com/#appointment, username=John Doe}</td>
+<td></td>
+<td>8</td>
+<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.testNavigateToHistoryFromProfile()'><b>testNavigateToHistoryFromProfile</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, username=John Doe}</td>
+<td></td>
+<td>10</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.BookAppointment.testNavigateToProfileFromAppointmentForm()'><b>testNavigateToProfileFromAppointmentForm</b><br>Test class: com.dennismamyala.automation.My_First_Project.BookAppointment<br>Parameters: {password=ThisIsNotAPassword, username=John Doe}</td>
+<td></td>
+<td>6</td>
+<td>com.dennismamyala.automation.My_First_Project.BookAppointment@3e78b6a5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -164,56 +224,8 @@ function toggleAllBoxes() {
 	at com.dennismamyala.automation.My_First_Project.Base.BaseTest.hasErrorMessageAppeared(BaseTest.java:122)
 	at com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace605440398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace605440398'><pre>java.lang.AssertionError: expected [ogin failed! Please ensure the username and password are valid.] but found [Login failed! Please ensure the username and password are valid.]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:644)
-	at Utils.WebDriverUtils.assertEquals(WebDriverUtils.java:46)
-	at com.dennismamyala.automation.My_First_Project.Pages.Login_Page.hasErrorAppeared(Login_Page.java:63)
-	at com.dennismamyala.automation.My_First_Project.Base.BaseTest.hasErrorMessageAppeared(BaseTest.java:122)
-	at com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:22)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>6</td>
-<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139</td></tr>
-<tr>
-<td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation()'><b>loginErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {errorMessage=ogin failed! Please ensure the username and password are valid., password=&password@, username=John Doe}</td>
-<td><div><pre>java.lang.AssertionError: expected [ogin failed! Please ensure the username and password are valid.] but found [Login failed! Please ensure the username and password are valid.]
-	at Utils.WebDriverUtils.assertEquals(WebDriverUtils.java:46)
-	at com.dennismamyala.automation.My_First_Project.Pages.Login_Page.hasErrorAppeared(Login_Page.java:63)
-	at com.dennismamyala.automation.My_First_Project.Base.BaseTest.hasErrorMessageAppeared(BaseTest.java:122)
-	at com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace169049466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace169049466'><pre>java.lang.AssertionError: expected [ogin failed! Please ensure the username and password are valid.] but found [Login failed! Please ensure the username and password are valid.]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671214984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671214984'><pre>java.lang.AssertionError: expected [ogin failed! Please ensure the username and password are valid.] but found [Login failed! Please ensure the username and password are valid.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -250,8 +262,56 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>6</td>
-<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@36804139</td></tr>
+<td>4</td>
+<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828</td></tr>
+<tr>
+<td title='com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation()'><b>loginErrorValidation</b><br>Test class: com.dennismamyala.automation.My_First_Project.ErrorValidationTest<br>Parameters: {errorMessage=ogin failed! Please ensure the username and password are valid., password=&password@, username=John Doe}</td>
+<td><div><pre>java.lang.AssertionError: expected [ogin failed! Please ensure the username and password are valid.] but found [Login failed! Please ensure the username and password are valid.]
+	at Utils.WebDriverUtils.assertEquals(WebDriverUtils.java:46)
+	at com.dennismamyala.automation.My_First_Project.Pages.Login_Page.hasErrorAppeared(Login_Page.java:63)
+	at com.dennismamyala.automation.My_First_Project.Base.BaseTest.hasErrorMessageAppeared(BaseTest.java:122)
+	at com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace43402513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace43402513'><pre>java.lang.AssertionError: expected [ogin failed! Please ensure the username and password are valid.] but found [Login failed! Please ensure the username and password are valid.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:644)
+	at Utils.WebDriverUtils.assertEquals(WebDriverUtils.java:46)
+	at com.dennismamyala.automation.My_First_Project.Pages.Login_Page.hasErrorAppeared(Login_Page.java:63)
+	at com.dennismamyala.automation.My_First_Project.Base.BaseTest.hasErrorMessageAppeared(BaseTest.java:122)
+	at com.dennismamyala.automation.My_First_Project.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.dennismamyala.automation.My_First_Project.ErrorValidationTest@38af9828</td></tr>
 </table><p>
 </body>
 </html>

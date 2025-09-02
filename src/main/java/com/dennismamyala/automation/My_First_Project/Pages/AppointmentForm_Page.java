@@ -108,22 +108,9 @@ public class AppointmentForm_Page extends WebDriverUtils {
 
 		commentBox.sendKeys(comment);
 
-		// boolean isReadmissionApplied = checkBox.isSelected();
+		
 		bookAppointmentBtn.click();
 
-		// Got the users inputs directly from the page
-		// AppointmentConfirmation_Page appointmentConfirmation = new
-		// AppointmentConfirmation_Page(driver);
-		// appointmentConfirmation.validateConfirmation(date, comment, healthProgram,
-		// isReadmissionApplied, FacilityOptions);
-
-		// AppointmentConfirmation_Page appointmentConfirmation = new
-		// AppointmentConfirmation_Page(driver);
-		// appointmentConfirmation.validateConfirmation(date, comment, healthProgram,
-		// isReadmissionApplied, FacilityOptions);
-		// History_Page history = new History_Page(driver);
-
-		// return history;
 
 		AppointmentConfirmation_Page appointmentConfirmation = new AppointmentConfirmation_Page(driver);
 		return appointmentConfirmation;

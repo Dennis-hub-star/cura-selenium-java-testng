@@ -39,12 +39,7 @@ public class Login_Page extends WebDriverUtils{
 	
 	public AppointmentForm_Page Login(String username, String password) {
 		
-		//usernameField.sendKeys(username.getAttribute("value"));
-		//passwordField.sendKeys(username.getAttribute("value"));
-		
-		//usernameField.sendKeys(username.getAttribute("value"));
-		//passwordField.sendKeys(password.getAttribute("value"));
-		
+
 		usernameField.sendKeys(username);
 		passwordField.sendKeys(password);
 		
